@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Showcase</title>
+    <title>Responsive Image Showcase</title>
     <style>
         body {
             margin: 0;
@@ -12,19 +11,28 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 100%;
+            padding: 16px;
+            box-sizing: border-box;
         }
         img {
-            max-width: 1366px;
-            height: 5699px;
+            max-width: 100%;
+            height: auto;
             display: block;
+            margin: 0 auto;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <img src="screencapture-preview-themeforest-net-item-sydney-australia-immigration-wordpress-theme-full-screen-preview-53843439-2025-01-07-19_28_42.png" alt="High-Quality Image">
+    <div class="container">
+        <img src="screencapture-preview-themeforest-net-item-sydney-australia-immigration-wordpress-theme-full-screen-preview-53843439-2025-01-07-19_28_42.png" alt="Responsive Image">
+    </div>
 </body>
 </html>
